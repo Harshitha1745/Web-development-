@@ -1,0 +1,123 @@
+<!Doctype html>
+<html>
+<head>
+<meta name="viewport"content="width=device-width,intial-scale=1.0">
+<title>Animated web-design simple tutorials</title>
+<link rell="stylesheets" href="style.css">
+<style>.{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins', sans-serif;
+}
+.hero{
+    width:100%;
+    min-height:100vh;
+    background-image:url(pictures\/storage/emulated/0/Pictures/w-qjCHPZbeXCQ-unsplash.jpg );
+    background-position: center;
+    background-size:cover;
+    padding:10px 10%;
+    over-flow:hidden;
+    position:relative;
+}
+nav{
+    padding:10px 0;
+    display:flex;
+    align-items:center
+    justify-content:space-between;  
+}
+.logo{
+    width:140px;
+}
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin:10px 15px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:400;
+}
+.login-btn{
+    text-decoration:none;
+    color:#333;
+    margin-right:15px;
+    font-weight:400;
+}
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:14px 40px;
+    color:#fff;
+    background-image:linear-gradient(45deg,#df4881,#c430d7);
+    font-size:14px;
+    border-radius:40px;
+    border-top-right-radius:0;
+}
+.content{
+    margin-top:10%;
+    max-width:600px;
+}
+. content h1{
+    font-size:70px;
+    color:#222;
+}
+.content p{
+    margin: 10px 0 15px;
+    color:#333;
+    animation-delay:0.5s;
+}
+.content .btn{
+    padding:15px 80px;
+    font-size:16px;
+    animation-delay:0.8s;
+}
+.btn:hover{
+    border-top-right-radius:30px;
+}
+.feature-img{
+    width:50px;
+    position:absolute;
+    bottom:0;
+    right:10%
+}
+.feature-img.anim{
+    animation-delay:1.5s
+}
+.anim{
+    opacity:0;
+    transform:translateY(30px);
+    animation:moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="hero">
+<nav>
+<img src='pictures\/storage/emulated/0/Pictures/bird-colorful-logo-gradient-vector_343694-1365\.jpg'>
+<ul>
+<li><a href="#">features</a></li>
+<li><a href="#">How it works</a></li>
+<li><a href="#">privacy</a></li>
+</ul>
+<div>
+<a href="#" class="login-btn">log in</a>
+<a href="#" class="btn">download app</a>
+</div>
+</nav>
+<div class="content">
+<h1 class="anim">Make<br> New friends</h1>
+<p class="anim">Socially is a new social media platform to make new friends online in the world. Now let's explore all it's amazing features.</p>
+<a href="#" class="btn anim"> join now</a>
+</div>
+<img src="pictures\/storage/emulated/0/Pictures/BV-Acharya-17.jpg" class="feature-img anim">
+</div>
+</body>
